@@ -1,0 +1,256 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #003366; /* Deep blue color for the navbar */
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+  
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navbar #one {
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar #one li {
+    margin-right: 15px;
+  }
+  
+  #navbar #name {
+    font-size: 22px;  
+    letter-spacing: 1px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #005b99;
+    border-radius: 5px;
+  }
+
+  #logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%; /* Optional: makes the logo circular if it's square */
+}
+  
+  /* Main Section */
+  #mainSection {
+    background: url('img/New-York-City_-2016_\(Public__Domain\)Andreas__H.__from__Pixabay210119-050119.jpg') no-repeat center center/cover;
+    background-color: #555;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #mainSection h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  #invovledBtn {
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #invovledBtn:hover {
+    background-color: #ff5500;
+  }
+  
+  /* Who We Are Section */
+  #who {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  #blurb {
+    width: 45%;
+  }
+  
+  #blurb h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #blurb p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  #pic {
+    width: 45%;
+    height: 400px;
+    background-image: url('img/community-background.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  /* Goals Section */
+  #goals {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #goals h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  #pillars {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  #pillars section {
+    width: 30%;
+  }
+  
+  #pillars section img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  #pillars h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  #pillars p {
+    color: #777;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* CTA Section */
+  #CTA {
+    background-color: #003366;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  #split1, #split2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #split1 h2, #split2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff5500;
+  }
+  
+  /* Social Media Grid */
+  #grid {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #grid section {
+    width: 30%;
+  }
+  
+  #grid ul {
+    list-style-type: none;
+  }
+  
+  #grid h5 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #grid img {
+    width: 40px;
+    height: auto;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  #who #pic {
+    background-image: url('https://img.freepik.com/premium-photo/stock-market-graph-trading-analysis-investment-financial-stock-exchange-financial-forex-graph-stock-market-graph-chart-business-crisis-crash-loss-grow-up-gain-profits-win-up-trend_73523-7941.jpg')
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  

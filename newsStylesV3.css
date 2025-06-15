@@ -1,0 +1,261 @@
+/* Theme Variables */
+:root {
+    --deepBlue: #003366;
+    --brightOrange: #ff6600;
+    --hoverOrange: #ff5500;
+    --backgroundGrey: #f5f5f5;
+    --textDark: #333;
+    --textLight: #555;
+}
+
+/* Reset & Base */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--backgroundGrey);
+    color: var(--textDark);
+}
+
+/* Navbar Styling */
+header {
+    background-color: var(--deepBlue);
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+#name {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#navbar a {
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #005b99;
+}
+
+/* Main Layout */
+main {
+    padding-top: 140px;
+}
+
+/* Section Headers */
+#heading, #heading2 {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 2.5em;
+    color: var(--deepBlue);
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.2em;
+    color: var(--deepBlue);
+    margin: 100px 0 40px;
+}
+
+/* Cards */
+.card {
+    background-color: #1a3d5c;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--deepBlue);
+}
+
+.card h6 {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--textLight);
+}
+
+.card a {
+    display: inline-block;
+    background-color: var(--brightOrange);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: var(--hoverOrange);
+}
+
+/* Buttons */
+button {
+    display: block;
+    margin: 30px auto;
+    height: 60px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--brightOrange);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hoverOrange);
+    cursor: pointer;
+}
+
+/* Embedded Video Sections */
+#recent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#past {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#recent iframe {
+    width: 100%;            
+    max-width: 800px;       
+    height: 80vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border:2px solid var(--lightGreen);
+}
+
+#past iframe {
+    width: 100%;            
+    max-width: 800px;       
+    height: 500px;
+}
+
+/* Footer (optional) */
+footer {
+    background-color: var(--deepBlue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar li {
+        padding: 10px 0;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #heading, #heading2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+    #recent iframe, #past iframe {
+        width: 90vw;
+        height: 70vh;
+    }
+}

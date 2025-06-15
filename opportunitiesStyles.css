@@ -1,0 +1,252 @@
+html, body {
+    scroll-behavior: smooth;
+}
+:root {
+    --darkGreen:#01321f;
+    --lightGreen:#7ed955; 
+    --backgroundGrey: #dbdbdb;
+    --secondaryBlue: #0b2e6e;
+
+}
+main {
+    background-color: var(--backgroundGrey);
+    height:auto;
+}
+*, ::before, ::after {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+#two {
+    display:flex;
+    justify-content: right;
+}
+
+#logo {
+    height:60px;
+    width:60px;
+}
+li {
+    list-style-type: none;
+}
+#one{
+    display: flex;
+    align-items: center;
+}
+#logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--lightGreen);
+    background-color: var(--darkGreen);
+    height:120px;
+    font-size: 20px;
+}
+#eventsLink {
+    margin-right: 8vw;
+}
+#two li {
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+#navbar a {
+    
+    color: var(--lightGreen);
+}
+header {
+    position:fixed;
+    width: 100vw;
+}
+#heading {
+    padding-top: 175px;
+    text-align: center;
+    font-size:40px;
+    color:var(--secondaryBlue);
+    padding-bottom: 50px;
+}
+
+#recent iframe {
+    width: 100%;            
+    max-width: 800px;       
+    height: 80vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border:2px solid var(--lightGreen);
+}
+h3 {
+    color: var(--secondaryBlue);
+    text-align: center;
+    font-size:40px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+#past iframe {
+    width: 100%;            
+    max-width: 800px;       
+    height: 500px;
+}
+button {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    height:75px;
+    width:125px;
+    display:block;
+    border-radius: 15px;
+    font-size:15px;
+    font-weight: bold;
+    color:black;
+}
+button:hover {
+    cursor:pointer;
+}
+
+
+/* Card Styles (added from CSS1) */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.card h4 {
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card h6 {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    width: 125px;
+    display: block;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--lightGreen);
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--secondaryBlue);
+    color: white;
+}
+
+/* Section Styles */
+#heading, #heading2 {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#heading h1, #heading2 h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#past {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #heading h1, #heading2 h1 {
+        font-size: 2em;
+    }
+
+    #past {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+    .card {
+        width: 90%; /* Adjust card width on smaller screens */
+    }
+}
+
+/* Prevent card from going above the navbar */
+main {
+    padding-top: 140px; /* Adjusted to offset the height of the fixed navbar */
+}
+
+/* Section padding for the first section (optional for better alignment) */
+#heading, #heading2 {
+    padding-top: 50px;  /* Extra space for clarity */
+}
+
+#recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: auto;            /* Take up full viewport height */
+    margin-bottom: 30px;
+}
+
+#recent .card {
+    margin-top: 0; /* Reduce space above the card */
+}
+
+/* Reduce space between the last card in pastComps and the Past Events title */
+#past .card {
+    margin-bottom: 10px; /* Reduce space below each card */
+    margin-right:25px;
+    margin-left:25px;
+}
+

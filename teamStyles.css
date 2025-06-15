@@ -1,0 +1,120 @@
+html, body {
+    scroll-behavior: smooth;
+}
+:root {
+    --darkGreen:#01321f;
+    --lightGreen:#7ed955; 
+    --backgroundGrey: #dbdbdb;
+    --secondaryBlue: #0b2e6e;
+
+}
+*, ::before, ::after {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+#two {
+    display:flex;
+    justify-content: right;
+}
+
+#logo {
+    height:60px;
+    width:60px;
+}
+li {
+    list-style-type: none;
+}
+#one{
+    display: flex;
+    align-items: center;
+}
+#logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--lightGreen);
+    background-color: var(--darkGreen);
+    height:120px;
+    font-size: 20px;
+}
+#eventsLink {
+    margin-right: 8vw;
+}
+#two li {
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+#navbar a {
+    
+    color: var(--lightGreen);
+}
+header {
+    position:fixed;
+    width: 100vw;
+}
+#heading {
+    padding-top: 175px;
+    text-align: center;
+    font-size:40px;
+    color:var(--secondaryBlue);
+}
+
+#faces ul li img {
+    object-fit: cover;
+    width:100%;
+    height: 335px;
+}
+#text {
+    width: 375px;
+    height: 450px;
+    padding-left: 15px;
+    padding-right:15px;
+}
+#text p{
+    padding-top:25px;
+    padding-bottom:10px;
+}
+
+#faces ul {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;  /* Ensures items wrap to next line */
+    justify-content: center; /* Centers items in the row */
+
+}
+
+#faces ul li {
+    width: 450px; /* Default size for larger screens */
+    height: 700px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightGreen);
+    margin: 50px 10px;
+}
+
+/* Media query to handle smaller screen widths (like half screen or smaller) */
+@media (max-width: 960px) {
+    #faces ul li {
+        width: 48%;  /* Display two items per row */
+        height: 700px; /* Adjust height if necessary */
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+}
+
+#faces ul li #text {
+    box-sizing: border-box;
+}

@@ -1,0 +1,176 @@
+/* Reset and Base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar #one li {
+    margin-right: 15px;
+}
+
+#name {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+#navbar ul li a:hover {
+    background-color: #005b99;
+    border-radius: 5px;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Page Heading */
+#heading {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#heading h1 {
+    font-size: 3em;
+}
+
+/* Team Section */
+#faces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+    background-color: #ffffff;
+}
+
+#faces ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#faces li {
+    background-color: #f5f5f5;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#faces li:hover {
+    transform: translateY(-5px);
+}
+
+#faces img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#faces #text {
+    padding: 20px;
+}
+
+#faces p:first-child {
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+#faces h2 {
+    margin: 5px 0 10px;
+    font-size: 1.4em;
+    color: #ff6600;
+}
+
+#faces p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Footer (optional) */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #faces li {
+        width: 90%;
+    }
+
+    #faces img {
+        height: 250px;
+    }
+
+    #heading h1 {
+        font-size: 2.2em;
+    }
+}
+html {
+    scroll-behavior: smooth;
+  }
+  

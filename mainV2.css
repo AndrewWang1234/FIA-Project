@@ -1,0 +1,323 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0a1f3d; /* Dark Blue */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header #navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #navbar #one {
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar #logo {
+    width: 50px; /* Adjust based on logo size */
+    margin-right: 15px;
+  }
+  
+  #navbar #name {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #navbar #two {
+    display: flex;
+  }
+  
+  #navbar #two li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  #navbar #two li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #navbar #two li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section */
+  #mainSection {
+    background-color: #0a1f3d; /* Dark Blue Background */
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+  }
+  
+  #mainSection h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #invovledBtn {
+    background-color: #00b0d7; /* Light Blue */
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #invovledBtn:hover {
+    background-color: #007b8f; /* Darker Blue */
+  }
+  
+  /* Who We Are Section */
+  #who {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+  }
+  
+  #who #blurb {
+    width: 50%;
+  }
+  
+  #who h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #who p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  #who button {
+    background-color: #00b0d7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #who button:hover {
+    background-color: #007b8f;
+  }
+  
+  #who #pic {
+    background-image: url('img/your-image.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Goals Section */
+  #goals {
+    padding: 60px 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #goals h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  #pillars {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #pillars section {
+    width: 30%;
+  }
+  
+  #pillars img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  #pillars h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #pillars p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Call to Action (CTA) Section */
+  #CTA {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+  }
+  
+  #split1, #split2 {
+    width: 48%;
+  }
+  
+  #split1 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #split1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #split1 button {
+    background-color: #00b0d7;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #split1 button:hover {
+    background-color: #007b8f;
+  }
+  
+  #split2 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #split2 #grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #split2 #grid section {
+    width: 30%;
+  }
+  
+  #split2 #grid img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #split2 #grid h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0a1f3d;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  footer a {
+    color: #00b0d7;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navbar #one {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    #who {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #who #blurb {
+      width: 90%;
+      text-align: center;
+    }
+  
+    #who #pic {
+      width: 90%;
+      height: 250px;
+      margin-top: 20px;
+    }
+  
+    #pillars {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #pillars section {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    #CTA {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #split1, #split2 {
+      width: 80%;
+      text-align: center;
+    }
+  
+    #split2 #grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #split2 #grid section {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  li {
+    list-style-type: none;
+  }
+
+  #who #pic {
+    background-image: url('https://img.freepik.com/premium-photo/stock-market-graph-trading-analysis-investment-financial-stock-exchange-financial-forex-graph-stock-market-graph-chart-business-crisis-crash-loss-grow-up-gain-profits-win-up-trend_73523-7941.jpg')
+  }
